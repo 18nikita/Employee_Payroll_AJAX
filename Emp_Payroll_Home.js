@@ -95,8 +95,8 @@ window.addEvenListener('DOMContentLoaded', (event) => {
     }
 
 
-< !--CRUD OPERATION DAY46-- >
-//UC1
+// CRUD OPERATION DAY46
+
 const remove = (node) => {
         let empPayrollData = empPayrollList.find(empData => empData._id == node.id);
         if (!empPayrollData) return;
