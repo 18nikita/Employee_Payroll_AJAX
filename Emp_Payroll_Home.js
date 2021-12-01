@@ -95,9 +95,8 @@ window.addEvenListener('DOMContentLoaded', (event) => {
     }
 
 
-// CRUD OPERATION DAY46
-
-const remove = (node) => {
+    // CRUD OPERATION DAY46
+    const remove = (node) => {
         let empPayrollData = empPayrollList.find(empData => empData._id == node.id);
         if (!empPayrollData) return;
         const index = empPayrollList
@@ -108,4 +107,6 @@ const remove = (node) => {
         document.querySelector(".emp-count").textContent = empPayrollList.length;
         createInnerHtml();
     }
+
+    
 });
